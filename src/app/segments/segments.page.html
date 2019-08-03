@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pontos turísticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Default Segment -->
+<ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="friends">
+      <ion-label>Grande Mesquita de Omar Ali Saifuddin</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies">
+      <ion-label>Istana Nurul Iman</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="mimie">
+      <ion-label>Jerudong Park Playground</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+    {{texto}}
+    <div *ngIf="teste">
+      <ion-img src="../assets/img/{{imagem}}"></ion-img>
+    </div>  
+
+   
+
+    <ion-button expand="full" href="home">Voltar</ion-button>
+</ion-content>
